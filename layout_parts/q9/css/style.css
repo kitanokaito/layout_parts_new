@@ -1,5 +1,76 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.ani-trans {
+  width: 500px;
+  height: 333px;
+  /* border:1px solid #ccc; */
+  overflow:hidden;
+  position: relative;
+  margin: 0 auto;
+}
+.image {
+  /* background-color: rgba(0,0,0,0); */
+  transition: all .5s;
+}
+.text {
+  padding: 20px;
+  position: absolute;
+  bottom: -100%;
+  left: 0px;
+  font-size: 16px;
+  line-height: 16px;
+  word-break: break-all;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .8));
+  transition: all .5s;
+}
+.ani-trans:hover .text{
+  bottom: 0;
+}
+.ani-trans:hover .image{
+  background-color: rgba(0,0,0,8);
+  transform: scale(1.5);
+}
 
+
+
+.out-circle{
+  position: relative;
+  margin: 0 auto;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #ecf1f2;
+  z-index: 0;
+}
+.out-circle-anime {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px 0 0 0;
+  background-color: #00bcd4;
+  animation: spin 1.1s linear infinite;
+  transform-origin: right bottom;
+  z-index: 1;
+}
+@keyframes spin {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+
+.in-circle {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  margin: 0 auto;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 2;
+  /* border: 1px solid black;  */
+}
 /* 回答はここに書いてね */

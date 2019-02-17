@@ -1,5 +1,28 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-
+.kcal-table {
+  width:100%;
+}
+.kcal-table th {
+  color:white;
+  font-size: 18px;
+  line-height: 26px;
+  background-color: #2244aa;
+  padding:10px;
+  border:1px solid #dedede;
+}
+.kcal-table td {
+  font-size: 16px;
+  line-height: 22px;
+  padding:10px;
+  text-align: center;
+  border:1px solid #dedede;
+}
+.kcal-table tr:last-child {
+  border-top:2px dashed #000;
+}
+.kcal-table tr:nth-child(2n+1) {
+  background-color: #ecf1f2;
+}
 /* 回答はここに書いてね */
