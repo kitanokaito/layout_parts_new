@@ -13,49 +13,48 @@
   /* background-color: rgba(0,0,0,0); */
   transition: all .5s;
 }
-.text {
-  padding: 20px;
+.textbox {
+  width: 500px;
+  height: 333px;
   position: absolute;
   bottom: -100%;
   left: 0px;
+  color:white;
   font-size: 16px;
   line-height: 16px;
   word-break: break-all;
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .8));
   transition: all .5s;
+  box-sizing: border-box;
 }
-.ani-trans:hover .text{
+.text {
+  margin: 20px;
+  position: absolute;
+  bottom: 0px;
+}
+.ani-trans:hover .textbox{
   bottom: 0;
 }
 .ani-trans:hover .image{
-  background-color: rgba(0,0,0,8);
+  /* background-color: rgba(0,0,0,.8); */
   transform: scale(1.5);
 }
 
 
 
-.out-circle{
+.circle{
   position: relative;
   margin: 0 auto;
   height: 100px;
   width: 100px;
+  border: 10px solid #ecf1f2;
+  border-top-color: #00bcd4;
   border-radius: 50%;
-  background-color: #ecf1f2;
-  z-index: 0;
-}
-.out-circle-anime {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0 auto;
-  height: 50px;
-  width: 50px;
-  border-radius: 50px 0 0 0;
-  background-color: #00bcd4;
+  background-color: white;
   animation: spin 1.1s linear infinite;
-  transform-origin: right bottom;
-  z-index: 1;
+  
 }
+
 @keyframes spin {
 	0% {transform: rotate(0deg);}
 	100% {transform: rotate(360deg);}

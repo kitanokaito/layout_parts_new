@@ -12,32 +12,34 @@
 .float-left {
   width:225px;
   float:left;
+  margin-left:50px;
   font-size: 16px;
   box-sizing: border-box;
 }
-.float-right {
-  /* margin-left:50px; */
-  width:225px;
-  float:right;
-  font-size: 16px;
-  box-sizing: border-box;
+.float-left:first-child {
+  margin-left:0px;
 }
 
-.table {
+
+.q7-table {
   display: table;
+  font-size: 0px;
+  /* padding-left:50px; */
 }
 .table-outer {
+  padding-left:50px;
   display: table-cell;
+  font-size: 16px;
+  vertical-align: middle;
 }
+
 .table-inner {
   font-size: 16px;
   width: 225px;
-  display: inline-block;
-  vertical-align: middle;
-  box-sizing: border-box;
+  box-sizing: border-box; 
 }
-.q7-table .table-outer:last-child .table-inner {
-  margin-left: 50px;
+.table-outer:first-child{
+  padding-left:0px;
 }
 
 .inlineblock-outer {

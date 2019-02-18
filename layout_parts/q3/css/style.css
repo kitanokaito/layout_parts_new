@@ -19,10 +19,11 @@
   text-align: center;
   border:1px solid #dedede;
 }
-.kcal-table tr:last-child {
+.kcal-table tbody tr:last-child {
   border-top:2px dashed #000;
+  background-color: white;
 }
-.kcal-table tr:nth-child(2n+1) {
+.kcal-table tbody tr:nth-child(2n+1) {
   background-color: #ecf1f2;
 }
 /* 回答はここに書いてね */
